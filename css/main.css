@@ -1,0 +1,356 @@
+body{
+    font-size: 15px;
+    margin:0px auto;
+    width: 600px;
+
+    font-family: 'M PLUS 1p', sans-serif;
+}
+.toprogo {
+    width: 100%;
+   margin:30px 0px 0px 0px;
+}
+
+
+.mainBOX {
+    width: 540px;
+    margin:0px auto;
+}
+
+.PUT_titlearea {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 14px;
+    border-radius: 6px;  
+    margin:5px auto;
+    width: 518px;
+    height: 18px;
+    padding:10px 10px;
+    box-shadow: 1px 1px 4px #d3d3d3;
+    border:1px #9ecc8f solid;
+    }
+.PUT_textarea {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 14px;
+    border-radius: 6px;  
+    margin:5px auto;
+    width: 518px;
+    height: 280px;
+    padding:10px 10px;
+    box-shadow: 1px 1px 4px #d3d3d3;
+    border:1px #9ecc8f solid;
+    /* border: 1px #999; */
+}
+
+
+
+.coin_area{
+    width: 538px;
+    height: 60px;
+    margin: 50px 0px 10px 0px ;
+    float:left;
+}
+
+
+
+/* 宝石コインのラジオボタンのぶぶん */
+input[type="radio"]{
+    display: none;
+}
+
+input[type="radio"] + label {
+    /* position: relaztive; */
+    display: inline-block;
+}
+
+/* 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍 */
+.Ru500box{
+    width: 55px;
+    height:60px;
+    margin:0px;
+    float:left;   
+    }
+input[type="radio"]+label[for="Ru500_radio"]{
+    background:url("../img/coinRu500_OFF.png") no-repeat top/contain;
+    width: 55px;
+    height:60px;
+}
+
+input[type="radio"]:checked + label[for="Ru500_radio"] {
+    background:url("../img/coinRu500_ON.png") no-repeat top/contain;
+    width: 55px;
+    height:60px;
+}
+
+/* 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍 */
+.Ru100box{
+    width: 40px;
+    height:60px;
+    margin:0px;
+    float:left;   
+    }
+input[type="radio"]+label[for="Ru100_radio"]{
+    background:url("../img/coinRu100_OFF.png") no-repeat top/contain;
+    width: 40px;
+    height:60px;
+}
+input[type="radio"]:checked + label[for="Ru100_radio"] {
+    background: url("../img/coinRu100_ON.png") no-repeat top/contain;
+    width: 40px;
+    height:60px;
+}
+/* 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍 */
+.Ru050box{
+    width: 38px;
+    height:60px;
+    margin:0px;
+    float:left;   
+    }
+input[type="radio"]+label[for="Ru050_radio"]{
+    background:url("../img/coinRu050_OFF.png") no-repeat top/contain;
+    width: 38px;
+    height:60px;
+}
+input[type="radio"]:checked + label[for="Ru050_radio"] {
+    background: url("../img/coinRu050_ON.png") no-repeat top/contain;
+    width: 38px;
+    height:60px;
+}
+/* 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍 */
+.Ru010box{
+    width: 34px;
+    height:60px;
+    margin:0px;
+    float:left;   
+    }
+input[type="radio"]+label[for="Ru010_radio"]{
+    background:url("../img/coinRu010_OFF.png") no-repeat top/contain;
+    width: 34px;
+    height:60px;
+}
+input[type="radio"]:checked + label[for="Ru010_radio"] {
+    background: url("../img/coinRu010_ON.png") no-repeat top/contain;
+    width: 34px;
+    height:60px;
+}
+/* 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍 */
+.Ru005box{
+    width: 32px;
+    height:60px;
+    margin:0px;
+    float:left;   
+    }
+input[type="radio"]+label[for="Ru005_radio"]{
+    background:url("../img/coinRu005_OFF.png") no-repeat top/contain;
+    width: 32px;
+    height:60px;
+}
+input[type="radio"]:checked + label[for="Ru005_radio"] {
+    background: url("../img/coinRu005_ON.png") no-repeat top/contain;
+    width: 32px;
+    height:60px;
+}
+/* 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍 */
+.Ru001box{
+    width: 28px;
+    height:60px;
+    margin:0px;
+    float:left;   
+    }
+input[type="radio"]+label[for="Ru001_radio"]{
+    background:url("../img/coinRu001_OFF.png") no-repeat top/contain;
+    width: 28px;
+    height:60px;
+}
+input[type="radio"]:checked + label[for="Ru001_radio"] {
+    background: url("../img/coinRu001_ON.png") no-repeat top/contain;
+    width: 28px;
+    height:60px;
+}
+
+/* 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍 */
+.coinbox{
+    background:url("../img/coinbox.png") no-repeat top/contain;
+    width: 74px;
+    height:60px;
+    margin:0px 5px;
+    float:left;   
+    }
+    .coinbox img{
+    width: 74px;
+    height:60px;
+    }
+
+/* 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍 */
+.Sa500box{
+    width: 55px;
+    height:60px;
+    margin:0px;
+    float:left;   
+    }
+input[type="radio"]+label[for="Sa500_radio"]{
+    background:url("../img/coinSa500_OFF.png") no-repeat top/contain;
+    width: 55px;
+    height:60px;
+}
+
+input[type="radio"]:checked + label[for="Sa500_radio"] {
+    background:url("../img/coinSa500_ON.png") no-repeat top/contain;
+    width: 55px;
+    height:60px;
+}
+
+/* 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍 */
+.Sa100box{
+    width: 40px;
+    height:60px;
+    margin:0px;
+    float:left;   
+    }
+input[type="radio"]+label[for="Sa100_radio"]{
+    background:url("../img/coinSa100_OFF.png") no-repeat top/contain;
+    width: 40px;
+    height:60px;
+}
+input[type="radio"]:checked + label[for="Sa100_radio"] {
+    background: url("../img/coinSa100_ON.png") no-repeat top/contain;
+    width: 40px;
+    height:60px;
+}
+/* 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍 */
+.Sa050box{
+    width: 38px;
+    height:60px;
+    margin:0px;
+    float:left;   
+    }
+input[type="radio"]+label[for="Sa050_radio"]{
+    background:url("../img/coinSa050_OFF.png") no-repeat top/contain;
+    width: 38px;
+    height:60px;
+}
+input[type="radio"]:checked + label[for="Sa050_radio"] {
+    background: url("../img/coinSa050_ON.png") no-repeat top/contain;
+    width: 38px;
+    height:60px;
+}
+/* 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍 */
+.Sa010box{
+    width: 34px;
+    height:60px;
+    margin:0px;
+    float:left;   
+    }
+input[type="radio"]+label[for="Sa010_radio"]{
+    background:url("../img/coinSa010_OFF.png") no-repeat top/contain;
+    width: 34px;
+    height:60px;
+}
+input[type="radio"]:checked + label[for="Sa010_radio"] {
+    background: url("../img/coinSa010_ON.png") no-repeat top/contain;
+    width: 34px;
+    height:60px;
+}
+/* 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍 */
+.Sa005box{
+    width: 32px;
+    height:60px;
+    margin:0px;
+    float:left;   
+    }
+input[type="radio"]+label[for="Sa005_radio"]{
+    background:url("../img/coinSa005_OFF.png") no-repeat top/contain;
+    width: 32px;
+    height:60px;
+}
+input[type="radio"]:checked + label[for="Sa005_radio"] {
+    background: url("../img/coinSa005_ON.png") no-repeat top/contain;
+    width: 32px;
+    height:60px;
+}
+/* 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍 */
+.Sa001box{
+    width: 28px;
+    height:60px;
+    margin:0px;
+    float:left;   
+    }
+input[type="radio"]+label[for="Sa001_radio"]{
+    background:url("../img/coinSa001_OFF.png") no-repeat top/contain;
+    width: 28px;
+    height:60px;
+}
+input[type="radio"]:checked + label[for="Sa001_radio"] {
+    background: url("../img/coinSa001_ON.png") no-repeat top/contain;
+    width: 28px;
+    height:60px;
+}
+/* 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍 */
+
+/* 宝石コインのラジオボタンのぶぶん */
+
+/* 気持ちの表示部分 */
+.box_content_Sa{
+    display:flex; 
+    margin:10px 30px;
+    padding:0;
+    width: 540px;
+    text-align:left;
+    border-radius: 6px; /*角丸*/
+    background-repeat: repeat;
+    background-image: url("../img/Sa_backimg.png");
+
+}
+.box_content_Ru{
+    display:flex; 
+    margin:10px 30px;
+    padding:0;
+    width: 540px;
+    text-align:left;
+    border-radius: 6px; /*角丸*/
+    background-repeat: repeat;
+    background-image: url("../img/Ru_backimg.png");
+
+}
+.box_content_L{
+    margin:5px;
+    padding:0;
+    width: 100px;
+    text-align:left;
+
+}
+
+.box_content_L img{
+    width: 100px;
+    text-align:left;
+
+}
+.box_content_R{
+    margin:5px;
+    padding:0px;
+    width: 430px;
+    text-align:left;
+}
+.box_R_title{
+    font-size: 20px;
+    margin:5px 10px 0px 5px;
+    padding:0px;
+    width: 415px;
+    text-align:left;
+}
+
+.box_R_comment{
+    font-size: 14px;
+    margin:0px 10px 10px 5px;
+    padding:0px;
+    width: 415px;
+    text-align:left;
+}
+
+.box_R_indate{
+    font-size: 12px;
+    margin:3px 10px 3px 5px;
+    padding:0px;
+    width: 430px;
+    text-align:left;
+    color: #9ecc8f;
+}
+/* 気持ちの表示部分 */
