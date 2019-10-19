@@ -5,7 +5,7 @@
 function db_conn()
 {
     //1. DB接続（別途送ります）
-    $dbn = 'mysql:dbname=gsf_d03_db01;charset=utf8;port=3306;host=localhost';
+    $dbn = 'mysql:dbname=enoki;charset=utf8;port=3306;host=localhost';
     $user = 'root';
     $pwd = 'root';
 

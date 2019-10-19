@@ -103,6 +103,103 @@ $Sa_sum = $values[1];
         現在のマインド貯金額は <B><?= $Ru_sum + $Sa_sum ?> です</B>
     </div>
     <?= $view ?>
+    
+    <!-- 以下、仲地変更箇所 -->
+    <canvas id="myChart1"></canvas>
+    <canvas id="myChart2"></canvas>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    
+    <script>
+    const url = 'get_post.php';
+    var result = 0;
+    $.getJSON({
+            url: url,
+            metod: 'POST',
+            async: false
+        })
+        .done(function(data, textStatus, jqXHR) {
+            // console.log(data);
+            result = data;
+
+        })
+        .fail(function(jqXHR, textStatus, errorThrown) {
+            console.log('error');
+        })
+        .always(function() {});
+    
+    // rubyとsafireに分ける
+    console.log(result);
+    var ru_data = []
+    var ru_label = []
+    var sa_data = []
+    var sa_label = []
+    for (var i=0; i<result.length; i++) {
+      if (result[i]['coin_mind'] == 'Ru'){
+        ru_data.push(result[i]['coin_value'])
+        ru_label.push(result[i]['indate'])
+      }else{
+        sa_data.push(result[i]['coin_value'])
+        sa_label.push(result[i]['indate'])
+      }
+    }
+    
+    // 以下、グラフ描画
+    var ctx1 = document.getElementById('myChart1').getContext('2d');
+    var ctx2 = document.getElementById('myChart2').getContext('2d');
+
+    var chart1 = new Chart(ctx1, {
+      type: 'line',
+      data: {
+          labels: ru_label,
+          datasets: [{
+            label: 'coin',
+            type: 'line',
+            data: ru_data,
+            fill: false,
+            borderColor: 'red'
+          }],
+      },
+      options: {
+        title: {
+            display: true,
+            text: '直近のRubyグラフ'
+        },
+        scales: {
+            xAxes: [{
+                // type: 'realtime'
+            }]
+        }
+      }
+    });
+    var chart2 = new Chart(ctx2, {
+      type: 'line',
+      data: {
+          labels: sa_label,
+          datasets: [{
+            label: 'coin',
+            type: 'line',
+            data: sa_data,
+            fill: false,
+            borderColor: 'blue'
+          }],
+      },
+      options: {
+        title: {
+            display: true,
+            text: '直近のSafireグラフ'
+        },
+        scales: {
+            xAxes: [{
+                // type: 'realtime'
+            }]
+        }
+      }
+    });
+    </script>
+    <!-- ここまで -->
+
     <form method="post" action="insert.php" enctype="multipart/form-data">
         <!-- コインを決める -->
         <div class="mainBOX">

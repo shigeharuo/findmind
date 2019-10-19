@@ -7,3 +7,10 @@ SELECT COUNT(coin_value) as coin_value FROM coin_post WHERE coin_mind ="Ru"and i
 投稿の一番最新のIDを検索する
 SELECT MAX(id) as Max FROM coin_post
 
+SELECT * FROM coin_post WHERE userId=2
+ORDER BY id DESC
+LIMIT 5;
+
+SELECT AVG(coin_value) FROM coin_post WHERE userId=2 and coin_mind="Ru"
+ORDER BY id DESC
+LIMIT 5,10;

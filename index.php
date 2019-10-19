@@ -34,18 +34,18 @@
 
     <!-- 必要な属性を追加 -->
     <div class="mainBOX">
-        <!-- <form method="post" action="login_act.php"> -->
-        <form method="post" action="coinbox.php">
+        <form method="post" action="login_act.php">
+        <!-- <form method="post" action="coinbox.php"> -->
             <div class="toprogo">
                 <img src="img/toprogo.png" class="toprogo" alt="">
             </div>
             <div class="form-group">
                 <label for="lid">Email</label>
-                <input type="text" class="PUT_titlearea" id="lid" name="lid" placeholder="ログイン未実装">
+                <input type="text" class="PUT_titlearea" id="email" name="email" placeholder="ログイン未実装">
             </div>
             <div class="form-group">
                 <label for="lpw">Pass</label>
-                <input type="password" class="PUT_titlearea" id="lpw" name="lpw" placeholder="このままログインボタンを押してください。">
+                <input type="password" class="PUT_titlearea" id="password" name="password" placeholder="このままログインボタンを押してください。">
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">ログイン</button>

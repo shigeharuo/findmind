@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('functions.php'); //←関数を記述したファイルの読み込み
 $pdo = db_conn(); //←関数実行
 
@@ -27,7 +28,7 @@ $parts = explode("_", $coin_code); //アンダーバーで配列に分割
 
 $coin_mind = $parts[0];
 $coin_value = intval($parts[1]);
-$userid  = "99999";
+$userid  = $_SESSION['id'];
 
 
 //2. DB接続します(エラー処理追加)
@@ -70,6 +71,9 @@ $stmt->bindValue(':a6', $coin_value, PDO::PARAM_INT);  //Integer（数値の場�
 $stmt->bindValue(':a7', $coin_open, PDO::PARAM_INT);  //Integer（数値の場合 PDO::PARAM_INT)
 $status = $stmt->execute();
 
+$_SESSION['last_mind'] = $coin_mind;
+$_SESSION['last_value'] = $coin_value;
+
 // var_dump($stmt);
 // exit();
 
@@ -78,7 +82,8 @@ $status = $stmt->execute();
 // $url = "Location: feedback.php";
 $feedback = rand(1, 2);
 $feedbackmoji = strval($feedback);
-$url = "Location: index" . $feedbackmoji . ".php";
+// $url = "Location: index" . $feedbackmoji . ".php";
+$url = "Location: feadback.php";
 
 // var_dump($url);
 
