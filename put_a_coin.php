@@ -68,7 +68,7 @@
 
                 <!-- fffffffff -->
                 <p class="coinbox">
-                    <img src="img/coinbox.png" alt="">
+                    <a href="coinbox.php"> <img src="img/coinbox.png" alt=""></a>
                 </p>
 
                 <!-- fffffffff -->

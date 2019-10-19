@@ -1,0 +1,9 @@
+Ruのコインの合計数をas coin_valueの箱に返すSUM
+SELECT SUM(coin_value) as coin_value FROM coin_post WHERE coin_mind ="Ru" GROUP BY coin_mind
+
+Ruのコインの投稿数をas coin_valueで返すCOUNT（投稿の40番目から45番目集計する）
+SELECT COUNT(coin_value) as coin_value FROM coin_post WHERE coin_mind ="Ru"and id BETWEEN 40 AND 45 GROUP BY coin_mind
+
+投稿の一番最新のIDを検索する
+SELECT MAX(id) as Max FROM coin_post
+

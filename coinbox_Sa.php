@@ -5,14 +5,11 @@ $pdo = db_conn(); //←関数実行
 
 //データ表示SQL作成
 // $sql = 'SELECT * FROM coin_post ORDER BY id DESC limit 1';
-$sql = 'SELECT * FROM coin_post ORDER BY indate DESC';
+$sql = 'SELECT * FROM coin_post  where coin_mind = "Sa" ORDER BY indate DESC';
 $allcoin = 'SELECT coin_value FROM coin_post where coin_mind = "Ru" ';
 // $sql = 'SELECT * FROM HIP_TAKE_HIP ORDER BY indate DESC';
 $stmt = $pdo->prepare($sql);
 $status = $stmt->execute();
-
-
-$allcoin2 = 'SELECT coin_value FROM coin_post where indate BETWEEN  "10"and"15"';
 
 
 
@@ -95,12 +92,12 @@ $Sa_sum = $values[1];
     </header> -->
     <div class="topnavi_area">
         <div class="navi_LLL"><a href="put_a_coin.php">気持ちを貯金する</a></div>
-        <div class="navi_RuSa"><a href="coinbox_Ru.php"><img src="img/TOP_RuON.png" alt=""></a></div>
-        <div class="navi_yajirusi"><img src="img/TOP_RuSaOFF.png" alt=""></div>
-        <div class="navi_RuSa"><a href="coinbox_Sa.php"><img src="img/TOP_SaON.png" alt=""></a></div>
+        <div class="navi_RuSa"><a href="coinbox.php"><img src="img/TOP_RuOFF.png" alt=""></a></div>
+        <div class="navi_yajirusi"><a href="coinbox_Ru.php"><img src="img/TOP_RuSaOFF.png" alt=""></a></div>
+        <div class="navi_RuSa"><img src="img/TOP_SaON.png" alt=""></div>
     </div>
-    <div class="navi_COIN">
-        現在のマインド貯金額は <B><?= $Ru_sum + $Sa_sum ?> です</B>
+    <div class="navi_COIN_Sa">
+        現在の悲しみサファイヤ貯金額は <B><?= $Sa_sum ?> です</B>
     </div>
     <?= $view ?>
     <form method="post" action="insert.php" enctype="multipart/form-data">

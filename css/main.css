@@ -13,7 +13,7 @@ body{
 
 .mainBOX {
     width: 540px;
-    margin:0px auto;
+    margin:10px auto 100px auto;
 }
 
 .PUT_titlearea {
@@ -60,6 +60,68 @@ input[type="radio"] + label {
     /* position: relaztive; */
     display: inline-block;
 }
+
+
+/* コインボックスナビゲート部分 */
+.topnavi_area{
+    width: 540px;
+    height: 53px;
+    margin: 50px 30px 5px 30px ;
+    }
+.navi_LLL{
+    width: 385px;
+    height:53px;
+    margin:0px;
+    float:left;   
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 14px;
+    }
+
+.navi_RuSa{
+    width: 60px;
+    height:53px;
+    margin:0px;
+
+    float: left;   
+    }
+
+.navi_yajirusi{
+    width: 35px;
+    height:53px;
+    margin:0px;
+    float:left;   
+    }
+
+.navi_COIN{
+    width: 540px;
+    height: 20px;
+    margin: 0px 30px 0px 30px ;
+    font-family: 'M PLUS 1p', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #8cc63f;
+    }
+
+    .navi_COIN_Ru{
+    width: 540px;
+    height: 20px;
+    margin: 0px 30px 0px 30px ;
+    font-family: 'M PLUS 1p', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #ff6366;
+    }
+
+    .navi_COIN_Sa{
+    width: 540px;
+    height: 20px;
+    margin: 0px 30px 0px 30px ;
+    font-family: 'M PLUS 1p', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #29c4cf;
+    }
+
 
 /* 卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍卍 */
 .Ru500box{
